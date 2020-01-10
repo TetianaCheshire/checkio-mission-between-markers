@@ -1,0 +1,47 @@
+<p>
+    Te dan una cadena y dos marcadores (el inicial y el final). Tienes que encontrar una subcadena encerrada entre estos dos marcadores. Pero hay algunas condiciones importantes:
+</p>
+
+<ul>
+	<li>Los marcadores iniciales y finales son siempre diferentes.</li>
+	<li>Si no hay un marcador inicial, entonces el primer carácter debe considerarse el comienzo de una cadena.</li>
+	<li>Si no hay un marcador final, entonces el último carácter debe considerarse el final de una cadena.</li>
+    <li>Si faltan los marcadores inicial y final, simplemente devuelve la cadena completa.</li>
+	<li>Si el marcador final viene antes que el marcador inicial, entonces devuelve una cadena vacía.</li>
+</ul>
+
+<p>
+    <strong>Entrada: </strong> Tres argumentos. Todos ellos son cadenas. Los argumentos segundo y tercero son los marcadores iniciales y finales.
+</p>
+
+<p>
+    <strong>SAlida: </strong> Una cadena. 
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Ejemplo:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">betweenMarkers('What is >apple<', '>', '<') == 'apple'
+betweenMarkers('No[/b] hi', '[b]', '[/b]') == 'No'
+</pre>
+{% else %}
+<pre class="brush: python">between_markers('What is >apple<', '>', '<') == 'apple'
+between_markers('No[/b] hi', '[b]', '[/b]') == 'No'
+</pre>
+{% endif %}
+</div>
+
+<p class="for_info_only">
+    <strong>Cómo se usa: </strong>
+    <i>para analizar textos</i>
+</p>
+
+<p>
+    <strong>Condición inicial:</strong>
+    <i>no puede haber más de un marcador final y no puede haber más de una inicial</i>
+</p>

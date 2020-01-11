@@ -50,6 +50,11 @@ TESTS = {
             "input": ['No <hi> one', '>', '<'],
             "answer": '',
             "explanation": "Wrong direction2"
+        },
+        {
+            "input": ['<head><title>title My new site</title></head>', '<title>', '</title>'],
+            "answer": 'title My new site',
+            "explanation": "when title is not a tag"
         }
     ]
 }
